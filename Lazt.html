@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked by LazSTSec</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            animation: flicker 1.5s infinite alternate;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em;
+            letter-spacing: 3px;
+            animation: flicker 2s infinite alternate;
+        }
+        .message {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-transform: uppercase;
+            margin-top: 30px;
+            animation: pulse 2s infinite alternate;
+        }
+        .message span {
+            color: white;
+            font-weight: bold;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            height: 345px;
+        }
+        .play-button {
+            background-color: transparent;
+            border: 2px solid red;
+            color: red;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+        }
+        .play-button:hover {
+            background-color: red;
+            color: black;
+            transform: scale(1.1);
+        }
+        @keyframes flicker {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+        @keyframes pulse {
+            0% { color: red; }
+            100% { color: yellow; }
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .message {
+                font-size: 1em;
+            }
+            .play-button {
+                font-size: 1.2em;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <img src="https://raw.githubusercontent.com/FINIXHAWK671/Music/refs/heads/main/LazStSecLogo.png" alt="LazSTSec Logo" class="logo">
+        LazSTSec
+    </h1>
+    <h2>Your Website Has Been Attacked by LazSTSec</h2>
+
+    <div class="message">
+        <p>We burned every bridge We crossed, because all We ever got from the other side was silence.<br>
+        <span>[WARNING] Your system has been successfully attacked by our Comrades.</span>
+        </p>
+    </div>      
+    <audio id="a" loop>
+        <source src="https://raw.githubusercontent.com/FINIXHAWK671/Music/main/thegoldenyami-narvent-fainted-slowed-reverb.m4a" type="audio/mpeg">
+    </audio>
+    <button class="play-button" onclick="document.getElementById('a').play()">Play Music</button>
+
+</body>
+</html>
